@@ -1,6 +1,5 @@
 package baitap4;
 
-import java.util.Scanner;
 
 public class Triangle extends Shape{
     private double side1=1.0, side2=1.0,side3 = 1.0;
@@ -9,7 +8,13 @@ public class Triangle extends Shape{
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
+    }
 
+    public Triangle(String color, double side1, double side2, double side3) {
+        super(color);
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
     }
 
     public Triangle(){
@@ -54,22 +59,5 @@ public class Triangle extends Shape{
     }
     public double getPerimeter(){
         return (this.side1+this.side2+this.side3)/2;
-    }
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Nhập cạnh 1");
-        double side1 = input.nextDouble();
-        System.out.println("Nhập cạnh 2");
-        double side2 = input.nextDouble();
-        System.out.println("Nhập cạnh 3");
-        double side3 = input.nextDouble();
-        System.out.println("Nhập color");
-        String color = input.nextLine();
-        input.nextLine();
-        Triangle dt = new Triangle(side1,side2,side3);
-        System.out.println("Diện tích là:" +dt.getArea());
-        System.out.println("Chu vi la: "+dt.getPerimeter());
-        System.out.println("color" + color);
     }
 }
