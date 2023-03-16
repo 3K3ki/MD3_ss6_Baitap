@@ -13,7 +13,7 @@ public class Main {
 
 
         circle = new Circle(3.5, "indigo");
-        System.out.println(circle);
+        System.out.println(circle.dienTich());
 
         //kiểm thử Class Circle
         System.out.println("---------Cylinder----------");
@@ -28,7 +28,7 @@ public class Main {
 
 
         cylinder = new Cylinder(3.5, "orange", 3,3.5);
-        System.out.println(cylinder);
+        System.out.println(cylinder.theTich());
 
     }
 }

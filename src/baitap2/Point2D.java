@@ -26,12 +26,20 @@ public class Point2D {
         this.x = x;
         this.y = y;
     }
+    public void setXY(float x, float y){
+        this.x = x;
+        this.y = y;
+    }
+    public float[] getXY(){
+        return new float[]{this.x,this.y};
+    }
 
     @Override
     public String toString() {
         return "Point2D{" +
                 "x=" + x +
                 ", y=" + y +
+                ", (x,y)=" + "(" + x + y + ")" +
                 '}';
     }
 }
